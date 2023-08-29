@@ -1,0 +1,7 @@
+# IntelliJ project files
+.idea
+*.iml
+target
+logs
+*.pdb
+*-backup-*.chnr.json
