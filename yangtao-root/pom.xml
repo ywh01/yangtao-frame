@@ -4,15 +4,15 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.yangtao.love</groupId>
+    <groupId>yangtao.love</groupId>
     <artifactId>yangtao-root</artifactId>
     <!-- 当前项目只要打成POM格式即可 -->
     <packaging>pom</packaging>
     <version>1.0.0-SNAPSHOT</version>
 
-<!--    <modules>-->
-<!--        <module>../bee-component</module>-->
-<!--    </modules>-->
+    <modules>
+        <module>../yangtao-cloud</module>
+    </modules>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
