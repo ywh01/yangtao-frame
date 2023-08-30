@@ -1,0 +1,29 @@
+server:
+  port: 19100
+spring:
+  application:
+    name: yangtao-cloud-gateway
+  profiles:
+    active: dev
+
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+  cloud:
+    nacos:
+      username: xxx
+      password: xxx
+      server-addr: xxx:8848
+      discovery:
+        # 仅请求分组相同的服务
+        # 本地多服务联调 将group改成个人唯一标识，如product-developer1
+        # ！！！group 修改不要提交到仓库！！！
+        group: xxx
+        namespace: xxx
+      config:
+        group: xxx
+        file-extension: yml
+        namespace: ${spring.cloud.nacos.discovery.namespace}
+

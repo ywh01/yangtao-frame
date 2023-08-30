@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <name>yangtao-common</name>
+    <groupId>yangtao.love</groupId>
+    <artifactId>yangtao-common</artifactId>
+    <version>${yangtao-frame.version}</version>
+    <packaging>pom</packaging>
+    <description>common公用组件包</description>
+
+    <parent>
+        <groupId>yangtao.love</groupId>
+        <artifactId>yangtao-root</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+        <relativePath>../yangtao-root/pom.xml</relativePath>
+    </parent>
+
+    <modules>
+        <module>yangtao-common-starter</module>
+        <module>yangtao-common-web</module>
+        <module>yangtao-common-mybatisplus</module>
+        <module>yangtao-common-redis</module>
+        <module>yangtao-common-swagger</module>
+        <module>yangtao-common-log</module>
+        <module>yangtao-common-tool</module>
+        <module>yangtao-common-websocket</module>
+        <module>yangtao-common-test</module>
+        <module>yangtao-common-job</module>
+        <module>yangtao-common-mail</module>
+        <module>yangtao-common-mq</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>yangtao.love</groupId>
+                <artifactId>yangtao-common-starter</artifactId>
+                <version>${yangtao-frame.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>yangtao.love</groupId>
+                <artifactId>yangtao-common-mybatisplus</artifactId>
+                <version>${yangtao-frame.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>yangtao.love</groupId>
+                <artifactId>yangtao-common-redis</artifactId>
+                <version>${yangtao-frame.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>yangtao.love</groupId>
+                <artifactId>yangtao-common-swagger</artifactId>
+                <version>${yangtao-frame.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>yangtao.love</groupId>
+                <artifactId>yangtao-common-web</artifactId>
+                <version>${yangtao-frame.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>yangtao.love</groupId>
+                <artifactId>yangtao-common-log</artifactId>
+                <version>${yangtao-frame.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>yangtao.love</groupId>
+                <artifactId>yangtao-common-tool</artifactId>
+                <version>${yangtao-frame.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>yangtao.love</groupId>
+                <artifactId>yangtao-common-websocket</artifactId>
+                <version>${yangtao-frame.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.aliyun.oss</groupId>
+                <artifactId>aliyun-sdk-oss</artifactId>
+                <version>${oss.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>

@@ -2,12 +2,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <name>yangtao-cloud</name>
+    <name>yangtao-service</name>
     <groupId>yangtao.love</groupId>
-    <artifactId>yangtao-cloud</artifactId>
+    <artifactId>yangtao-service</artifactId>
     <version>${yangtao-frame.version}</version>
     <packaging>pom</packaging>
-    <description>cloud组件</description>
+    <description>yangtao-service</description>
 
     <parent>
         <groupId>yangtao.love</groupId>
@@ -15,16 +15,5 @@
         <version>1.0.0-SNAPSHOT</version>
         <relativePath>../yangtao-root/pom.xml</relativePath>
     </parent>
-
-    <modules>
-        <module>yangtao-cloud-gateway</module>
-        <module>yangtao-cloud-nacos</module>
-        <module>yangtao-cloud-open-feign</module>
-        <module>yangtao-cloud-ribbon</module>
-        <module>yangtao-cloud-seata</module>
-        <module>yangtao-cloud-security</module>
-        <module>yangtao-cloud-sentinel</module>
-        <module>yangtao-cloud-stream</module>
-    </modules>
 
 </project>

@@ -12,6 +12,8 @@
 
     <modules>
         <module>../yangtao-cloud</module>
+        <module>../yangtao-service</module>
+        <module>../yangtao-common</module>
     </modules>
 
     <parent>
@@ -52,6 +54,11 @@
         <maven.compiler.plugin.version>3.9.0</maven.compiler.plugin.version>
         <maven.surefire.plugin.version>3.1.2</maven.surefire.plugin.version>
         <maven.jar.plugin.version>3.3.0</maven.jar.plugin.version>
+        <!-- yangtao-cloud -->
+        <sentinel-datasource-nacos.version>1.8.6</sentinel-datasource-nacos.version>
+        <seata.version>1.5.2</seata.version>
+        <spring-cloud-starter-security.version>3.0.0-M6</spring-cloud-starter-security.version>
+        <spring-cloud-starter-oauth2.version>3.0.0-M6</spring-cloud-starter-oauth2.version>
     </properties>
 
     <build>
@@ -137,6 +144,27 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
+            <dependency>
+                <groupId>io.seata</groupId>
+                <artifactId>seata-serializer-kryo</artifactId>
+                <version>${seata.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.csp</groupId>
+                <artifactId>sentinel-datasource-nacos</artifactId>
+                <version>${sentinel-datasource-nacos.version}</version>
+            </dependency>
+<!--            <dependency>-->
+<!--                <groupId>org.springframework.cloud</groupId>-->
+<!--                <artifactId>spring-cloud-starter-security</artifactId>-->
+<!--                <version>${spring-cloud-starter-security.version}</version>-->
+<!--            </dependency>-->
+<!--            <dependency>-->
+<!--                <groupId>org.springframework.cloud</groupId>-->
+<!--                <artifactId>spring-cloud-starter-oauth2</artifactId>-->
+<!--                <version>${spring-cloud-starter-oauth2.version}</version>-->
+<!--            </dependency>-->
         </dependencies>
     </dependencyManagement>
 </project>

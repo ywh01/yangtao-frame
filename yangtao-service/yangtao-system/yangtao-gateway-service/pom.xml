@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <name>yangtao-gateway-service</name>
+    <groupId>yangtao.love.service.gateway</groupId>
+    <artifactId>yangtao-gateway-service</artifactId>
+    <version>${yangtao-frame.version}</version>
+    <description>网关服务</description>
+
+    <parent>
+        <groupId>yangtao.love</groupId>
+        <artifactId>yangtao-system</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+        <relativePath>../../yangtao-system/pom.xml</relativePath>
+    </parent>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>yangtao.love</groupId>
+            <artifactId>yangtao-cloud-gateway</artifactId>
+            <version>${yangtao-frame.version}</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <finalName>yangtao-gateway-service</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>yangtao.love.service.gateway.YangtaoGatewayServiceApplication</mainClass>
+                            <useUniqueVersions>false</useUniqueVersions>
+                        </manifest>
+                    </archive>
+                    <excludes>
+                        <exclude>/*.yml</exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
