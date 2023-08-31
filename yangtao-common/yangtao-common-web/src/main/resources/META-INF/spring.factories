@@ -1,4 +1,4 @@
 # Auto Configure
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-com.jingdianjichi.threadpool.ThreadPoolExecutorAutoConfig
+yangtao.love.common.web.threadpool.ThreadPoolExecutorAutoConfig
 

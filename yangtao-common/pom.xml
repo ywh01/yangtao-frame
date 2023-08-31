@@ -18,7 +18,7 @@
     </parent>
 
     <modules>
-        <module>yangtao-common-starter</module>
+        <module>yangtao-common-mongo</module>
         <module>yangtao-common-web</module>
         <module>yangtao-common-mybatisplus</module>
         <module>yangtao-common-redis</module>
@@ -29,7 +29,6 @@
         <module>yangtao-common-test</module>
         <module>yangtao-common-job</module>
         <module>yangtao-common-mail</module>
-        <module>yangtao-common-mq</module>
     </modules>
 
     <dependencyManagement>
@@ -79,6 +78,7 @@
                 <artifactId>aliyun-sdk-oss</artifactId>
                 <version>${oss.version}</version>
             </dependency>
+
         </dependencies>
     </dependencyManagement>
 

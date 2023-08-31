@@ -1,3 +1,0 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  com.jingdianjichi.mq.config.MessageSenderConfig
-
