@@ -3,9 +3,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <name>yangtao-cloud</name>
-    <groupId>yangtao.love</groupId>
     <artifactId>yangtao-cloud</artifactId>
-    <version>${yangtao-frame.version}</version>
+    <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <description>cloud组件</description>
 
@@ -17,14 +16,31 @@
     </parent>
 
     <modules>
-        <module>yangtao-cloud-gateway</module>
-        <module>yangtao-cloud-nacos</module>
-        <module>yangtao-cloud-open-feign</module>
-        <module>yangtao-cloud-ribbon</module>
-        <module>yangtao-cloud-seata</module>
-        <module>yangtao-cloud-security</module>
-        <module>yangtao-cloud-sentinel</module>
-        <module>yangtao-cloud-stream</module>
+        <module>./yangtao-cloud-gateway</module>
+        <module>./yangtao-cloud-nacos</module>
+        <module>./yangtao-cloud-open-feign</module>
+        <module>./yangtao-cloud-ribbon</module>
+        <module>./yangtao-cloud-seata</module>
+        <module>./yangtao-cloud-security</module>
+        <module>./yangtao-cloud-sentinel</module>
+        <module>./yangtao-cloud-stream</module>
     </modules>
+
+    <repositories>
+        <repository>
+            <id>aliyunmaven</id>
+            <name>aliyun maven</name>
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+            <layout>default</layout>
+            <!-- 是否开启发布版构件下载 -->
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <!-- 是否开启快照版构件下载 -->
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 
 </project>

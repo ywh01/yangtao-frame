@@ -25,9 +25,9 @@
 
     <repositories>
         <repository>
-            <id>central</id>
-            <name>aliyun maven</name>
-            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+            <id>aliyunmaven</id>
+            <name>阿里云公共仓库</name>
+            <url>https://maven.aliyun.com/repository/public</url>
             <layout>default</layout>
             <!-- 是否开启发布版构件下载 -->
             <releases>
@@ -35,7 +35,9 @@
             </releases>
             <!-- 是否开启快照版构件下载 -->
             <snapshots>
-                <enabled>false</enabled>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+                <checksumPolicy>fail</checksumPolicy>
             </snapshots>
         </repository>
     </repositories>
@@ -59,37 +61,38 @@
         <seata.version>1.5.2</seata.version>
         <spring-cloud-starter-security.version>3.0.0-M6</spring-cloud-starter-security.version>
         <spring-cloud-starter-oauth2.version>3.0.0-M6</spring-cloud-starter-oauth2.version>
+        <spring.cloud.starter.netflix.ribbon.version>2.2.10.RELEASE</spring.cloud.starter.netflix.ribbon.version>
         <!--other-->
+        <spring.boot.autoconfigure.version>3.0.9</spring.boot.autoconfigure.version>
+        <spring.boot.log4j.version>3.0.9</spring.boot.log4j.version>
+        <spring.boot.web.version>2.4.2</spring.boot.web.version>
+        <spring.boot.test.version>2.4.2</spring.boot.test.version>
+        <spring.boot.redis.version>2.4.2</spring.boot.redis.version>
+        <spring.boot.jdbc.version>2.4.2</spring.boot.jdbc.version>
+        <spring.boot.druid.version>1.1.21</spring.boot.druid.version>
+        <spring.boot.mybatis.version>3.4.0</spring.boot.mybatis.version>
+        <mysql.connector.version>8.0.22</mysql.connector.version>
+        <jackson.annotations.version>2.11.4</jackson.annotations.version>
+        <jackson.databind.version>2.11.4</jackson.databind.version>
+        <fastjson.version>1.2.83</fastjson.version>
         <xxl.job.version>2.3.1</xxl.job.version>
         <easyexcel.version>3.1.1</easyexcel.version>
         <poi.version>3.17</poi.version>
         <oss.version>3.12.0</oss.version>
         <hiberante.validator.version>6.2.0.Final</hiberante.validator.version>
-        <javax.mail.version>1.6.2</javax.mail.version>
         <mongodb.version>2.4.7</mongodb.version>
+        <javax.mail.version>1.6.2</javax.mail.version>
         <disruptor.version>3.4.2</disruptor.version>
-        <spring.boot.jdbc.version>2.4.2</spring.boot.jdbc.version>
-        <spring.boot.druid.version>1.1.21</spring.boot.druid.version>
-        <mysql.connector.version>8.0.22</mysql.connector.version>
-        <spring.boot.mybatis.version>3.4.0</spring.boot.mybatis.version>
-        <spring.boot.redis.version>2.4.2</spring.boot.redis.version>
         <commons.pool.version>2.9.0</commons.pool.version>
-        <jackson.annotations.version>2.9.0</jackson.annotations.version>
-        <jackson.databind.version>2.11.4</jackson.databind.version>
         <commons.lang.version>2.6</commons.lang.version>
         <commons.lang3.version>3.8</commons.lang3.version>
         <guava.version>19.0</guava.version>
-        <fastjson.version>1.2.83</fastjson.version>
         <swagger.ui.version>2.7.0</swagger.ui.version>
         <swagger.version>2.7.0</swagger.version>
-        <spring.boot.autoconfigure.version>2.4.2</spring.boot.autoconfigure.version>
         <knife4j.version>2.0.4</knife4j.version>
         <swagger.bootstrap.ui.version>1.9.6</swagger.bootstrap.ui.version>
-        <spring.boot.test.version>2.4.2</spring.boot.test.version>
         <junit.version>4.13.1</junit.version>
         <pinyin4j.version>2.5.0</pinyin4j.version>
-        <spring.boot.web.version>2.4.2</spring.boot.web.version>
-        <spring.boot.log4j.version>2.4.2</spring.boot.log4j.version>
         <spring.websocket.version>2.4.2</spring.websocket.version>
         <freemarker.version>2.3.30</freemarker.version>
         <http.client.version>5.0.3</http.client.version>
@@ -177,6 +180,12 @@
                 <version>${spring.cloud.alibaba.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
+                <version>${spring.cloud.starter.netflix.ribbon.version}</version>
             </dependency>
 
             <dependency>

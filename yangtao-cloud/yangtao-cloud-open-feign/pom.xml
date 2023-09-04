@@ -4,16 +4,15 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <name>yangtao-cloud-open-feign</name>
-    <groupId>yangtao.love</groupId>
     <artifactId>yangtao-cloud-open-feign</artifactId>
-    <version>${yangtao-frame.version}</version>
+    <version>1.0.0-SNAPSHOT</version>
     <description>cloud组件openFeign</description>
 
     <parent>
         <groupId>yangtao.love</groupId>
         <artifactId>yangtao-cloud</artifactId>
         <version>1.0.0-SNAPSHOT</version>
-        <relativePath>../../yangtao-cloud/pom.xml</relativePath>
+        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <dependencies>

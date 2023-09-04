@@ -4,9 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <name>yangtao-common</name>
-    <groupId>yangtao.love</groupId>
     <artifactId>yangtao-common</artifactId>
-    <version>${yangtao-frame.version}</version>
+    <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <description>common公用组件包</description>
 
@@ -18,24 +17,24 @@
     </parent>
 
     <modules>
-        <module>yangtao-common-mongo</module>
-        <module>yangtao-common-web</module>
-        <module>yangtao-common-mybatisplus</module>
-        <module>yangtao-common-redis</module>
-        <module>yangtao-common-swagger</module>
-        <module>yangtao-common-log</module>
-        <module>yangtao-common-tool</module>
-        <module>yangtao-common-websocket</module>
-        <module>yangtao-common-test</module>
-        <module>yangtao-common-job</module>
-        <module>yangtao-common-mail</module>
+        <module>./yangtao-common-mongo</module>
+        <module>./yangtao-common-web</module>
+        <module>./yangtao-common-mybatisplus</module>
+        <module>./yangtao-common-redis</module>
+        <module>./yangtao-common-swagger</module>
+        <module>./yangtao-common-log</module>
+        <module>./yangtao-common-tool</module>
+        <module>./yangtao-common-websocket</module>
+        <module>./yangtao-common-test</module>
+        <module>./yangtao-common-job</module>
+        <module>./yangtao-common-mail</module>
     </modules>
 
     <dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>yangtao.love</groupId>
-                <artifactId>yangtao-common-starter</artifactId>
+                <artifactId>yangtao-common-mongo</artifactId>
                 <version>${yangtao-frame.version}</version>
             </dependency>
             <dependency>
