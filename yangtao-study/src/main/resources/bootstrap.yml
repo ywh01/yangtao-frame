@@ -1,0 +1,31 @@
+server:
+  port: 16001
+  tomcat:
+    connection-timeout: 180000
+spring:
+  application:
+    name: yangtao-study
+  profiles:
+    active: dev
+
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+  cloud:
+    nacos:
+      username: ai-dev
+      password: FQkNZhp2Zk
+      server-addr: 8.140.138.149:8848
+      discovery:
+        # 仅请求分组相同的服务
+        # 本地多服务联调 将group改成个人唯一标识，如product-developer1
+        # ！！！group 修改不要提交到仓库！！！
+        group: ai-dev
+        namespace: a01c6920-8cec-4a95-a026-734a625bb586
+      config:
+        group: ai-dev
+        file-extension: yml
+        namespace: ${spring.cloud.nacos.discovery.namespace}
+

@@ -75,7 +75,7 @@
             <dependency>
                 <groupId>com.aliyun.oss</groupId>
                 <artifactId>aliyun-sdk-oss</artifactId>
-                <version>${oss.version}</version>
+                <version>${aliyun-sdk-oss.version}</version>
             </dependency>
 
         </dependencies>
